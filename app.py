@@ -13,7 +13,7 @@ class CertoOfireApp:
     # LOGIN
     # ------------------------------
     def tela_login(self):
-        st.title("🔥 PDF Merge")
+        st.title("🎈 PDF Merge")
         st.write("Acesso apenas com usuários pré-definidos.")
 
         email = st.text_input("Email")
