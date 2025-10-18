@@ -30,16 +30,16 @@ class CertoOfireApp:
                     time.sleep(5)
                 st.rerun()
             else:
-                st.error("Usuário ou senha inválidos. Tente novamente")
+                st.error("Usuário ou senha inválidos.")
                 url = "https://gmail.com"
-                st.write("Se perdeu o acesso, envie e-mail relatando o caso para [rafera468@gmail.com](%s)" % url)
+                st.write("Se perdeu o acesso, envie e-mail relatando o caso para [rafera468@gmail.com](%s) (retorno em até 24h)" % url)
                 
 
     # ------------------------------
     # ÁREA DE MERGE
     # ------------------------------
     def tela_merge(self):
-        if st.button("🚪 Sair"):
+        if st.button("📑 Sair"):
             st.session_state.clear()
             st.success("Você saiu com sucesso!")
             time.sleep(2)

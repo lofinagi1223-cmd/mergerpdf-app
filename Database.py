@@ -24,6 +24,7 @@ class Database:
         self.USERS = {
             "admin": {"email": "admin@certo.com", "senha": "1234"},
             "rafael": {"email": "rafael@certo.com", "senha": "abcd"},
+            "Joao": {"email": "joao@certo.com", "senha": "1234" }
         }
 
     # ------------------------------
