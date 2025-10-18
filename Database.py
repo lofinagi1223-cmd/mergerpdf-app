@@ -1,6 +1,8 @@
 import firebase_admin
 from firebase_admin import credentials, firestore
 import datetime
+import json
+import os
 
 class Database:
     _instance = None  # Singleton
@@ -13,7 +15,8 @@ class Database:
 
     def _init_firebase(self):
         if not firebase_admin._apps:
-            cred = credentials.Certificate("firebase_key.json")
+            cred_info = json.loads(os.environ["FIREBASE_KEY"])
+            cred = credentials.Certificate(cred_info)
             firebase_admin.initialize_app(cred)
         self.db = firestore.client()
 
