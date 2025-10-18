@@ -1,0 +1,14 @@
+# Cache e arquivos temporários do Python
+__pycache__/
+*.pyc
+*.pyo
+
+# PDFs enviados e gerados
+uploads/
+*.pdf
+
+# Ambiente virtual (caso você crie um)
+#venv/
+
+# Credenciais privadas
+firebase_key.json
