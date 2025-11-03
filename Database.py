@@ -22,8 +22,8 @@ class Database:
 
         # Usuários pré-definidos (modo temporário)
         self.USERS = {
-            "admin": {"email": "admin@certo.com", "senha": "1234"},
-            "rafael": {"email": "rafael@certo.com", "senha": "abcd"},
+            "UsuariaRH": {"email": "usuaria-rh@gmail.com", "senha": "abcd"},
+            "Rafael": {"email": "rafael@certo.com", "senha": "1234"},
             "Joao": {"email": "joao@certo.com", "senha": "1234" }
         }
 

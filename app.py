@@ -4,7 +4,7 @@ import time
 from Database import Database
 from merger import PDFMerger
 
-class CertoOfireApp:
+class PDFApp:
     def __init__(self):
         self.db = Database()
         st.set_page_config(page_title="PDF Merge", page_icon="📍", layout="centered")
@@ -101,5 +101,5 @@ class CertoOfireApp:
 # MAIN
 # ------------------------------
 if __name__ == "__main__":
-    app = CertoOfireApp()
+    app = PDFApp()
     app.run()
