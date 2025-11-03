@@ -7,7 +7,7 @@ from merger import PDFMerger
 class PDFApp:
     def __init__(self):
         self.db = Database()
-        st.set_page_config(page_title="PDF Merge", page_icon="📎", layout="centered")
+        st.set_page_config(page_title="PDF Merge", page_icon="📍", layout="centered")
 
     # ------------------------------
     # LOGIN
