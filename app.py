@@ -7,13 +7,13 @@ from merger import PDFMerger
 class PDFApp:
     def __init__(self):
         self.db = Database()
-        st.set_page_config(page_title="PDF Merge", page_icon="📍", layout="centered")
+        st.set_page_config(page_title="PDF Merge", page_icon="📎", layout="centered")
 
     # ------------------------------
     # LOGIN
     # ------------------------------
     def tela_login(self):
-        st.title("🎈 PDF Merge")
+        st.title("📌 PDF Merge")
         st.write("Acesso apenas com usuários pré-definidos.")
 
         email = st.text_input("Email")
@@ -32,14 +32,14 @@ class PDFApp:
             else:
                 st.error("Usuário ou senha inválidos.")
                 url = "https://gmail.com"
-                st.write("Se perdeu o acesso, envie e-mail relatando o caso para [rafera468@gmail.com](%s) (retorno em até 24h)" % url)
+                st.write("Se perdeu o acesso, envie e-mail relatando para [pdfmerge-company@gmail.com](%s) (retorno em até 24h)" % url)
                 
 
     # ------------------------------
     # ÁREA DE MERGE
     # ------------------------------
     def tela_merge(self):
-        if st.button("📑 Sair"):
+        if st.button("Sair"):
             st.session_state.clear()
             st.success("Você saiu com sucesso!")
             time.sleep(2)
@@ -53,7 +53,7 @@ class PDFApp:
         )
 
         if uploaded_files and len(uploaded_files) > 1:
-            if st.button("🔗 Mesclar PDFs"):
+            if st.button("Mesclar PDFs"):
                 pasta_uploads = "uploads"
                 os.makedirs(pasta_uploads, exist_ok=True)
 
