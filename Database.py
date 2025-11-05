@@ -5,7 +5,7 @@ import json
 import os
 
 class Database:
-    _instance = None  # Singleton
+    _instance = None  
 
     def __new__(cls):
         if cls._instance is None:
@@ -21,15 +21,16 @@ class Database:
         self.db = firestore.client()
 
         # Usuários pré-definidos (modo temporário)
+
         self.USERS = {
             "UsuariaRH": {"email": "usuaria-rh@gmail.com", "senha": "usuaria01"},
             "Rafael": {"email": "rafael@certo.com", "senha": "1234"},
             "Joao": {"email": "joao@certo.com", "senha": "1234" }
         }
 
-    # ------------------------------
+
     # Métodos (ações do banco)
-    # ------------------------------
+
     def validar_usuario(self, email, senha):
         """Valida o usuário com base na lista local"""
         for nome, info in self.USERS.items():
