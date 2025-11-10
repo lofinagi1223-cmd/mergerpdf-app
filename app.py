@@ -9,9 +9,9 @@ class PDFApp:
         self.db = Database()
         st.set_page_config(page_title="PDF Merge", page_icon="📍", layout="centered")
 
-    # ------------------------------
+    
     # LOGIN
-    # ------------------------------
+    
     def tela_login(self):
         st.title("📌 PDF Merge")
         st.write("Acesso apenas com usuários pré-definidos.")
@@ -35,9 +35,9 @@ class PDFApp:
                 st.write("Se perdeu o acesso, envie e-mail relatando para [pdfmerge-company@gmail.com](%s) (retorno em até 24h)" % url)
                 
 
-    # ------------------------------
+    
     # ÁREA DE MERGE
-    # ------------------------------
+    
     def tela_merge(self):
         if st.button("Sair"):
             st.session_state.clear()
@@ -87,9 +87,9 @@ class PDFApp:
         elif uploaded_files and len(uploaded_files) == 1:
             st.warning("⚠️ **Mínimo 2 PDFs**")
 
-    # ------------------------------
+    
     # EXECUÇÃO PRINCIPAL
-    # ------------------------------
+    
     def run(self):
         if "usuario" not in st.session_state:
             self.tela_login()
@@ -97,9 +97,9 @@ class PDFApp:
             self.tela_merge()
 
 
-# ------------------------------
-# MAIN
-# ------------------------------
+
+    # MAIN
+
 if __name__ == "__main__":
     app = PDFApp()
     app.run()
