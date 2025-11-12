@@ -1,9 +1,7 @@
 <div align = "center">
 <img src="images-icon/unnamed-removebg-preview.png"
-width="165"/>
+width="155"/>
 </div>
-
----
 
 ## Descrição 📑
 
