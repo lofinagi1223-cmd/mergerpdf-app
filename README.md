@@ -1,6 +1,7 @@
-
-<center ><img src="images-icon/unnamed-removebg-preview.png"
-width="155"></center>
+<div align = "center">
+<img src="images-icon/unnamed-removebg-preview.png"
+width="165"/>
+</div>
 
 ---
 
@@ -27,4 +28,4 @@ Para acessar utilize a hotkey `ctrl + j`
 
 ## Coisas para fazer no futuro 📋
 
-Adicionar uma barra lateral na aplicação contendo novas funcionalidades, como a de rotacionar arquivos .PDF
+Adicionar uma barra lateral na aplicação contendo novas funcionalidades, ex: rotacionar arquivos .PDF
